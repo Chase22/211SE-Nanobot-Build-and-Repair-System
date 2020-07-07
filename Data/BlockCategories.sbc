@@ -8,6 +8,9 @@
          </Id>
          <DisplayName>纳米机器人建造系统</DisplayName>
          <Name>Dummy Industries</Name>
+         <SearchBlocks>true</SearchBlocks>
+         <IsShipCategory>true</IsShipCategory>
+         <IsBlockCategory>true</IsBlockCategory>
          <ItemIds>
             <string>ShipWelder/SELtdLargeNanobotBuildAndRepairSystem</string>
             <string>ShipWelder/SELtdSmallNanobotBuildAndRepairSystem</string>
