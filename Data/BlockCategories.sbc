@@ -1,20 +1,20 @@
 <?xml version="1.0"  encoding="utf-8"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-   <CategoryClasses>
-      <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
-         <Id>
-            <TypeId>GuiBlockCategoryDefinition</TypeId>
-            <SubtypeId/>
-         </Id>
-         <DisplayName>纳米机器人建造系统</DisplayName>
-         <Name>Dummy Industries</Name>
-         <SearchBlocks>true</SearchBlocks>
-         <IsShipCategory>true</IsShipCategory>
-         <IsBlockCategory>true</IsBlockCategory>
-         <ItemIds>
-            <string>ShipWelder/SELtdLargeNanobotBuildAndRepairSystem</string>
-            <string>ShipWelder/SELtdSmallNanobotBuildAndRepairSystem</string>
-         </ItemIds>
-      </Category>
-   </CategoryClasses>
+    <CategoryClasses>
+        <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+            <Id>
+                <TypeId>GuiBlockCategoryDefinition</TypeId>
+                <SubtypeId/>
+            </Id>
+            <DisplayName>纳米机器人建造系统</DisplayName>
+            <Name>Dummy Industries</Name>
+            <SearchBlocks>true</SearchBlocks>
+            <IsShipCategory>true</IsShipCategory>
+            <IsBlockCategory>true</IsBlockCategory>
+            <ItemIds>
+                <string>ShipWelder/SELtdLargeNanobotBuildAndRepairSystem</string>
+                <string>ShipWelder/SELtdSmallNanobotBuildAndRepairSystem</string>
+            </ItemIds>
+        </Category>
+    </CategoryClasses>
 </Definitions>
