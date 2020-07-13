@@ -9,6 +9,7 @@
             </Id>
             <DisplayName>纳米机</DisplayName>
             <Icon>Textures\Icons\SELtdNanobotBuildAndRepairSystem.dds</Icon>
+            <Description>纳米机器人可以自动焊接投影出的蓝图</Description>
             <CubeSize>Large</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
             <Size x="1" y="1" z="2"/>
