@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net48</TargetFramework>
+		<RootNamespace>Nanobot_Build_And_Repair_System</RootNamespace>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Platforms>AnyCPU;x64</Platforms>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+		<PackageReference Include="Mal.Mdk2.ModAnalyzers" Version="*" />
+		<PackageReference Include="Mal.Mdk2.References" Version="*" />
+	</ItemGroup>
+
+</Project>

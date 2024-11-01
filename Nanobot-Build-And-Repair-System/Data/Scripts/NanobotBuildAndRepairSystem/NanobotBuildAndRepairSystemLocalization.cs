@@ -1,237 +1,237 @@
+using Sandbox.ModAPI;
+using SpaceEquipmentLtd.Localization;
+using SpaceEquipmentLtd.Utils;
+using System.Collections.Generic;
+using VRage;
+using VRage.Utils;
+
 namespace SpaceEquipmentLtd.NanobotBuildAndRepairSystem
 {
-   using System.Collections.Generic;
-   using VRage;
-   using VRage.Utils;
-   using Sandbox.ModAPI;
-   using SpaceEquipmentLtd.Utils;
-   using SpaceEquipmentLtd.Localization;
-   
-   public static class Texts
-   {
-      public readonly static MyStringId ModeSettings_Headline;
-      public readonly static MyStringId SearchMode;
-      public readonly static MyStringId SearchMode_Tooltip;
-      public readonly static MyStringId SearchMode_Walk;
-      public readonly static MyStringId SearchMode_Fly;
+    public static class Texts
+    {
+        public readonly static MyStringId ModeSettings_Headline;
+        public readonly static MyStringId SearchMode;
+        public readonly static MyStringId SearchMode_Tooltip;
+        public readonly static MyStringId SearchMode_Walk;
+        public readonly static MyStringId SearchMode_Fly;
 
-      public readonly static MyStringId WorkMode;
-      public readonly static MyStringId WorkMode_Tooltip;
-      public readonly static MyStringId WorkMode_WeldB4Grind;
-      public readonly static MyStringId WorkMode_GrindB4Weld;
-      public readonly static MyStringId WorkMode_GrindIfWeldStuck;
-      public readonly static MyStringId WorkMode_WeldOnly;
-      public readonly static MyStringId WorkMode_GrindOnly;
+        public readonly static MyStringId WorkMode;
+        public readonly static MyStringId WorkMode_Tooltip;
+        public readonly static MyStringId WorkMode_WeldB4Grind;
+        public readonly static MyStringId WorkMode_GrindB4Weld;
+        public readonly static MyStringId WorkMode_GrindIfWeldStuck;
+        public readonly static MyStringId WorkMode_WeldOnly;
+        public readonly static MyStringId WorkMode_GrindOnly;
 
-      public readonly static MyStringId WeldSettings_Headline;
-      public readonly static MyStringId WeldUseIgnoreColor;
-      public readonly static MyStringId WeldUseIgnoreColor_Tooltip;
-      public readonly static MyStringId WeldBuildNew;
-      public readonly static MyStringId WeldBuildNew_Tooltip;
-      public readonly static MyStringId WeldToFuncOnly;
-      public readonly static MyStringId WeldToFuncOnly_Tooltip;
-      public readonly static MyStringId WeldPriority;
-      public readonly static MyStringId WeldPriority_Tooltip;
+        public readonly static MyStringId WeldSettings_Headline;
+        public readonly static MyStringId WeldUseIgnoreColor;
+        public readonly static MyStringId WeldUseIgnoreColor_Tooltip;
+        public readonly static MyStringId WeldBuildNew;
+        public readonly static MyStringId WeldBuildNew_Tooltip;
+        public readonly static MyStringId WeldToFuncOnly;
+        public readonly static MyStringId WeldToFuncOnly_Tooltip;
+        public readonly static MyStringId WeldPriority;
+        public readonly static MyStringId WeldPriority_Tooltip;
 
-      public readonly static MyStringId GrindSettings_Headline;
-      public readonly static MyStringId GrindHeadline_Tooltip;
-      public readonly static MyStringId GrindUseGrindColor;
-      public readonly static MyStringId GrindUseGrindColor_Tooltip;
-      public readonly static MyStringId GrindJanitorEnemy;
-      public readonly static MyStringId GrindJanitorEnemy_Tooltip;
-      public readonly static MyStringId GrindJanitorNotOwned;
-      public readonly static MyStringId GrindJanitorNotOwned_Tooltip;
-      public readonly static MyStringId GrindJanitorNeutrals;
-      public readonly static MyStringId GrindJanitorNeutrals_Tooltip;
-      public readonly static MyStringId GrindJanitorDisableOnly;
-      public readonly static MyStringId GrindJanitorDisableOnly_Tooltip;
-      public readonly static MyStringId GrindJanitorHackOnly;
-      public readonly static MyStringId GrindJanitorHackOnly_Tooltip;
-      public readonly static MyStringId GrindPriority;
-      public readonly static MyStringId GrindPriority_Tooltip;
-      public readonly static MyStringId GrindOrderNearest;
-      public readonly static MyStringId GrindOrderNearest_Tooltip;
-      public readonly static MyStringId GrindOrderFurthest;
-      public readonly static MyStringId GrindOrderFurthest_Tooltip;
-      public readonly static MyStringId GrindOrderSmallest;
-      public readonly static MyStringId GrindOrderSmallest_Tooltip;
+        public readonly static MyStringId GrindSettings_Headline;
+        public readonly static MyStringId GrindHeadline_Tooltip;
+        public readonly static MyStringId GrindUseGrindColor;
+        public readonly static MyStringId GrindUseGrindColor_Tooltip;
+        public readonly static MyStringId GrindJanitorEnemy;
+        public readonly static MyStringId GrindJanitorEnemy_Tooltip;
+        public readonly static MyStringId GrindJanitorNotOwned;
+        public readonly static MyStringId GrindJanitorNotOwned_Tooltip;
+        public readonly static MyStringId GrindJanitorNeutrals;
+        public readonly static MyStringId GrindJanitorNeutrals_Tooltip;
+        public readonly static MyStringId GrindJanitorDisableOnly;
+        public readonly static MyStringId GrindJanitorDisableOnly_Tooltip;
+        public readonly static MyStringId GrindJanitorHackOnly;
+        public readonly static MyStringId GrindJanitorHackOnly_Tooltip;
+        public readonly static MyStringId GrindPriority;
+        public readonly static MyStringId GrindPriority_Tooltip;
+        public readonly static MyStringId GrindOrderNearest;
+        public readonly static MyStringId GrindOrderNearest_Tooltip;
+        public readonly static MyStringId GrindOrderFurthest;
+        public readonly static MyStringId GrindOrderFurthest_Tooltip;
+        public readonly static MyStringId GrindOrderSmallest;
+        public readonly static MyStringId GrindOrderSmallest_Tooltip;
 
-      public readonly static MyStringId CollectSettings_Headline;
-      public readonly static MyStringId CollectPriority;
-      public readonly static MyStringId CollectPriority_Tooltip;
-      public readonly static MyStringId CollectOnlyIfIdle;
-      public readonly static MyStringId CollectOnlyIfIdle_Tooltip;
-      public readonly static MyStringId CollectPushOre;
-      public readonly static MyStringId CollectPushOre_Tooltip;
-      public readonly static MyStringId CollectPushItems;
-      public readonly static MyStringId CollectPushItems_Tooltip;
-      public readonly static MyStringId CollectPushComp;
-      public readonly static MyStringId CollectPushComp_Tooltip;
+        public readonly static MyStringId CollectSettings_Headline;
+        public readonly static MyStringId CollectPriority;
+        public readonly static MyStringId CollectPriority_Tooltip;
+        public readonly static MyStringId CollectOnlyIfIdle;
+        public readonly static MyStringId CollectOnlyIfIdle_Tooltip;
+        public readonly static MyStringId CollectPushOre;
+        public readonly static MyStringId CollectPushOre_Tooltip;
+        public readonly static MyStringId CollectPushItems;
+        public readonly static MyStringId CollectPushItems_Tooltip;
+        public readonly static MyStringId CollectPushComp;
+        public readonly static MyStringId CollectPushComp_Tooltip;
 
-      public readonly static MyStringId Color_PickCurrentColor;
-      public readonly static MyStringId Color_SetCurrentColor;
+        public readonly static MyStringId Color_PickCurrentColor;
+        public readonly static MyStringId Color_SetCurrentColor;
 
-      public readonly static MyStringId Priority_Enable;
-      public readonly static MyStringId Priority_Disable;
-      public readonly static MyStringId Priority_Up;
-      public readonly static MyStringId Priority_Down;
+        public readonly static MyStringId Priority_Enable;
+        public readonly static MyStringId Priority_Disable;
+        public readonly static MyStringId Priority_Up;
+        public readonly static MyStringId Priority_Down;
 
-      public readonly static MyStringId AreaShow;
-      public readonly static MyStringId AreaShow_Tooltip;
+        public readonly static MyStringId AreaShow;
+        public readonly static MyStringId AreaShow_Tooltip;
 
-      public readonly static MyStringId AreaWidth;
-      public readonly static MyStringId AreaHeight;
-      public readonly static MyStringId AreaDepth;
+        public readonly static MyStringId AreaWidth;
+        public readonly static MyStringId AreaHeight;
+        public readonly static MyStringId AreaDepth;
 
-      //public readonly static MyStringId RemoteCtrlBy;
-      //public readonly static MyStringId RemoteCtrlBy_Tooltip;
-      //public readonly static MyStringId RemoteCtrlBy_None;
-      //public readonly static MyStringId RemoteCtrlShowArea;
-      //public readonly static MyStringId RemoteCtrlShowArea_Tooltip;
-      //public readonly static MyStringId RemoteCtrlWorking;
-      //public readonly static MyStringId RemoteCtrlWorking_Tooltip;
+        //public readonly static MyStringId RemoteCtrlBy;
+        //public readonly static MyStringId RemoteCtrlBy_Tooltip;
+        //public readonly static MyStringId RemoteCtrlBy_None;
+        //public readonly static MyStringId RemoteCtrlShowArea;
+        //public readonly static MyStringId RemoteCtrlShowArea_Tooltip;
+        //public readonly static MyStringId RemoteCtrlWorking;
+        //public readonly static MyStringId RemoteCtrlWorking_Tooltip;
 
-      public readonly static MyStringId SoundVolume;
-      public readonly static MyStringId ScriptControlled;
-      public readonly static MyStringId ScriptControlled_Tooltip;
+        public readonly static MyStringId SoundVolume;
+        public readonly static MyStringId ScriptControlled;
+        public readonly static MyStringId ScriptControlled_Tooltip;
 
-      public readonly static MyStringId Info_CurentWeldEntity;
-      public readonly static MyStringId Info_CurentGrindEntity;
-      public readonly static MyStringId Info_InventoryFull;
-      public readonly static MyStringId Info_LimitReached;
-      //public readonly static MyStringId Info_DisabledByRemote;
-      public readonly static MyStringId Info_BlocksToBuild;
-      public readonly static MyStringId Info_BlocksToGrind;
-      public readonly static MyStringId Info_ItemsToCollect;
-      public readonly static MyStringId Info_More;
-      public readonly static MyStringId Info_MissingItems;
-      public readonly static MyStringId Info_BlockSwitchedOff;
-      public readonly static MyStringId Info_BlockDamaged;
-      public readonly static MyStringId Info_BlockUnpowered;
+        public readonly static MyStringId Info_CurentWeldEntity;
+        public readonly static MyStringId Info_CurentGrindEntity;
+        public readonly static MyStringId Info_InventoryFull;
+        public readonly static MyStringId Info_LimitReached;
+        //public readonly static MyStringId Info_DisabledByRemote;
+        public readonly static MyStringId Info_BlocksToBuild;
+        public readonly static MyStringId Info_BlocksToGrind;
+        public readonly static MyStringId Info_ItemsToCollect;
+        public readonly static MyStringId Info_More;
+        public readonly static MyStringId Info_MissingItems;
+        public readonly static MyStringId Info_BlockSwitchedOff;
+        public readonly static MyStringId Info_BlockDamaged;
+        public readonly static MyStringId Info_BlockUnpowered;
 
-      public readonly static MyStringId Cmd_HelpClient;
-      public readonly static MyStringId Cmd_HelpServer;
+        public readonly static MyStringId Cmd_HelpClient;
+        public readonly static MyStringId Cmd_HelpServer;
 
-      static Texts()
-      {
-         var language = Mod.DisableLocalization ? MyLanguagesEnum.English : MyAPIGateway.Session.Config.Language;
-         Mod.Log.Write(Logging.Level.Error, "Localization: Disabled={0} Language={1}", Mod.DisableLocalization, language);
+        static Texts()
+        {
+            var language = Mod.DisableLocalization ? MyLanguagesEnum.English : MyAPIGateway.Session.Config.Language;
+            Mod.Log.Write(Logging.Level.Error, "Localization: Disabled={0} Language={1}", Mod.DisableLocalization, language);
 
-         var texts = LocalizationHelper.GetTexts(language, GetDictionaries(), Mod.Log);
-         ModeSettings_Headline = LocalizationHelper.GetStringId(texts, "ModeSettings_Headline");
-         SearchMode = LocalizationHelper.GetStringId(texts, "SearchMode");
-         SearchMode_Tooltip = LocalizationHelper.GetStringId(texts, "SearchMode_Tooltip");
-         SearchMode_Walk = LocalizationHelper.GetStringId(texts, "SearchMode_Walk");
-         SearchMode_Fly = LocalizationHelper.GetStringId(texts, "SearchMode_Fly");
+            var texts = LocalizationHelper.GetTexts(language, GetDictionaries(), Mod.Log);
+            ModeSettings_Headline = LocalizationHelper.GetStringId(texts, "ModeSettings_Headline");
+            SearchMode = LocalizationHelper.GetStringId(texts, "SearchMode");
+            SearchMode_Tooltip = LocalizationHelper.GetStringId(texts, "SearchMode_Tooltip");
+            SearchMode_Walk = LocalizationHelper.GetStringId(texts, "SearchMode_Walk");
+            SearchMode_Fly = LocalizationHelper.GetStringId(texts, "SearchMode_Fly");
 
-         WorkMode = LocalizationHelper.GetStringId(texts, "WorkMode");
-         WorkMode_Tooltip = LocalizationHelper.GetStringId(texts, "WorkMode_Tooltip");
-         WorkMode_WeldB4Grind = LocalizationHelper.GetStringId(texts, "WorkMode_WeldB4Grind");
-         WorkMode_GrindB4Weld = LocalizationHelper.GetStringId(texts, "WorkMode_GrindB4Weld");
-         WorkMode_GrindIfWeldStuck = LocalizationHelper.GetStringId(texts, "WorkMode_GrindIfWeldStuck");
-         WorkMode_WeldOnly = LocalizationHelper.GetStringId(texts, "WorkMode_WeldOnly");
-         WorkMode_GrindOnly = LocalizationHelper.GetStringId(texts, "WorkMode_GrindOnly");
+            WorkMode = LocalizationHelper.GetStringId(texts, "WorkMode");
+            WorkMode_Tooltip = LocalizationHelper.GetStringId(texts, "WorkMode_Tooltip");
+            WorkMode_WeldB4Grind = LocalizationHelper.GetStringId(texts, "WorkMode_WeldB4Grind");
+            WorkMode_GrindB4Weld = LocalizationHelper.GetStringId(texts, "WorkMode_GrindB4Weld");
+            WorkMode_GrindIfWeldStuck = LocalizationHelper.GetStringId(texts, "WorkMode_GrindIfWeldStuck");
+            WorkMode_WeldOnly = LocalizationHelper.GetStringId(texts, "WorkMode_WeldOnly");
+            WorkMode_GrindOnly = LocalizationHelper.GetStringId(texts, "WorkMode_GrindOnly");
 
-         WeldSettings_Headline = LocalizationHelper.GetStringId(texts, "WeldSettings_Headline");
-         WeldUseIgnoreColor = LocalizationHelper.GetStringId(texts, "WeldUseIgnoreColor");
-         WeldUseIgnoreColor_Tooltip = LocalizationHelper.GetStringId(texts, "WeldUseIgnoreColor_Tooltip");
-         WeldBuildNew = LocalizationHelper.GetStringId(texts, "WeldBuildNew");
-         WeldBuildNew_Tooltip = LocalizationHelper.GetStringId(texts, "WeldBuildNew_Tooltip");
-         WeldToFuncOnly = LocalizationHelper.GetStringId(texts, "WeldToFuncOnly");
-         WeldToFuncOnly_Tooltip = LocalizationHelper.GetStringId(texts, "WeldToFuncOnly_Tooltip");
-         WeldPriority = LocalizationHelper.GetStringId(texts, "WeldPriority");
-         WeldPriority_Tooltip = LocalizationHelper.GetStringId(texts, "WeldPriority_Tooltip");
+            WeldSettings_Headline = LocalizationHelper.GetStringId(texts, "WeldSettings_Headline");
+            WeldUseIgnoreColor = LocalizationHelper.GetStringId(texts, "WeldUseIgnoreColor");
+            WeldUseIgnoreColor_Tooltip = LocalizationHelper.GetStringId(texts, "WeldUseIgnoreColor_Tooltip");
+            WeldBuildNew = LocalizationHelper.GetStringId(texts, "WeldBuildNew");
+            WeldBuildNew_Tooltip = LocalizationHelper.GetStringId(texts, "WeldBuildNew_Tooltip");
+            WeldToFuncOnly = LocalizationHelper.GetStringId(texts, "WeldToFuncOnly");
+            WeldToFuncOnly_Tooltip = LocalizationHelper.GetStringId(texts, "WeldToFuncOnly_Tooltip");
+            WeldPriority = LocalizationHelper.GetStringId(texts, "WeldPriority");
+            WeldPriority_Tooltip = LocalizationHelper.GetStringId(texts, "WeldPriority_Tooltip");
 
-         GrindSettings_Headline = LocalizationHelper.GetStringId(texts, "GrindSettings_Headline");
-         GrindUseGrindColor = LocalizationHelper.GetStringId(texts, "GrindUseGrindColor");
-         GrindUseGrindColor_Tooltip = LocalizationHelper.GetStringId(texts, "GrindUseGrindColor_Tooltip");
+            GrindSettings_Headline = LocalizationHelper.GetStringId(texts, "GrindSettings_Headline");
+            GrindUseGrindColor = LocalizationHelper.GetStringId(texts, "GrindUseGrindColor");
+            GrindUseGrindColor_Tooltip = LocalizationHelper.GetStringId(texts, "GrindUseGrindColor_Tooltip");
 
-         GrindJanitorEnemy = LocalizationHelper.GetStringId(texts, "GrindJanitorEnemy");
-         GrindJanitorEnemy_Tooltip = LocalizationHelper.GetStringId(texts, "GrindJanitorEnemy_Tooltip");
-         GrindJanitorNotOwned = LocalizationHelper.GetStringId(texts, "GrindJanitorNotOwned");
-         GrindJanitorNotOwned_Tooltip = LocalizationHelper.GetStringId(texts, "GrindJanitorNotOwned_Tooltip");
-         GrindJanitorNeutrals = LocalizationHelper.GetStringId(texts, "GrindJanitorNeutrals");
-         GrindJanitorNeutrals_Tooltip = LocalizationHelper.GetStringId(texts, "GrindJanitorNeutrals_Tooltip");
-         GrindJanitorDisableOnly = LocalizationHelper.GetStringId(texts, "GrindJanitorDisableOnly");
-         GrindJanitorDisableOnly_Tooltip = LocalizationHelper.GetStringId(texts, "GrindJanitorDisableOnly_Tooltip");
-         GrindJanitorHackOnly = LocalizationHelper.GetStringId(texts, "GrindJanitorHackOnly");
-         GrindJanitorHackOnly_Tooltip = LocalizationHelper.GetStringId(texts, "GrindJanitorHackOnly_Tooltip");
+            GrindJanitorEnemy = LocalizationHelper.GetStringId(texts, "GrindJanitorEnemy");
+            GrindJanitorEnemy_Tooltip = LocalizationHelper.GetStringId(texts, "GrindJanitorEnemy_Tooltip");
+            GrindJanitorNotOwned = LocalizationHelper.GetStringId(texts, "GrindJanitorNotOwned");
+            GrindJanitorNotOwned_Tooltip = LocalizationHelper.GetStringId(texts, "GrindJanitorNotOwned_Tooltip");
+            GrindJanitorNeutrals = LocalizationHelper.GetStringId(texts, "GrindJanitorNeutrals");
+            GrindJanitorNeutrals_Tooltip = LocalizationHelper.GetStringId(texts, "GrindJanitorNeutrals_Tooltip");
+            GrindJanitorDisableOnly = LocalizationHelper.GetStringId(texts, "GrindJanitorDisableOnly");
+            GrindJanitorDisableOnly_Tooltip = LocalizationHelper.GetStringId(texts, "GrindJanitorDisableOnly_Tooltip");
+            GrindJanitorHackOnly = LocalizationHelper.GetStringId(texts, "GrindJanitorHackOnly");
+            GrindJanitorHackOnly_Tooltip = LocalizationHelper.GetStringId(texts, "GrindJanitorHackOnly_Tooltip");
 
-         GrindPriority = LocalizationHelper.GetStringId(texts, "GrindPriority");
-         GrindPriority_Tooltip = LocalizationHelper.GetStringId(texts, "GrindPriority_Tooltip");
+            GrindPriority = LocalizationHelper.GetStringId(texts, "GrindPriority");
+            GrindPriority_Tooltip = LocalizationHelper.GetStringId(texts, "GrindPriority_Tooltip");
 
-         GrindOrderNearest = LocalizationHelper.GetStringId(texts, "GrindOrderNearest");
-         GrindOrderNearest_Tooltip = LocalizationHelper.GetStringId(texts, "GrindOrderNearest_Tooltip");
-         GrindOrderFurthest = LocalizationHelper.GetStringId(texts, "GrindOrderFurthest");
-         GrindOrderFurthest_Tooltip = LocalizationHelper.GetStringId(texts, "GrindOrderFurthest_Tooltip");
-         GrindOrderSmallest = LocalizationHelper.GetStringId(texts, "GrindOrderSmallest");
-         GrindOrderSmallest_Tooltip = LocalizationHelper.GetStringId(texts, "GrindOrderSmallest_Tooltip");
+            GrindOrderNearest = LocalizationHelper.GetStringId(texts, "GrindOrderNearest");
+            GrindOrderNearest_Tooltip = LocalizationHelper.GetStringId(texts, "GrindOrderNearest_Tooltip");
+            GrindOrderFurthest = LocalizationHelper.GetStringId(texts, "GrindOrderFurthest");
+            GrindOrderFurthest_Tooltip = LocalizationHelper.GetStringId(texts, "GrindOrderFurthest_Tooltip");
+            GrindOrderSmallest = LocalizationHelper.GetStringId(texts, "GrindOrderSmallest");
+            GrindOrderSmallest_Tooltip = LocalizationHelper.GetStringId(texts, "GrindOrderSmallest_Tooltip");
 
-         CollectSettings_Headline = LocalizationHelper.GetStringId(texts, "CollectSettings_Headline");
-         CollectPriority = LocalizationHelper.GetStringId(texts, "CollectPriority");
-         CollectPriority_Tooltip = LocalizationHelper.GetStringId(texts, "CollectPriority_Tooltip");
-         CollectOnlyIfIdle = LocalizationHelper.GetStringId(texts, "CollectOnlyIfIdle");
-         CollectOnlyIfIdle_Tooltip = LocalizationHelper.GetStringId(texts, "CollectOnlyIfIdle_Tooltip");
-         CollectPushOre = LocalizationHelper.GetStringId(texts, "CollectPushOre");
-         CollectPushOre_Tooltip = LocalizationHelper.GetStringId(texts, "CollectPushOre_Tooltip");
-         CollectPushItems = LocalizationHelper.GetStringId(texts, "CollectPushItems");
-         CollectPushItems_Tooltip = LocalizationHelper.GetStringId(texts, "CollectPushItems_Tooltip");
-         CollectPushComp = LocalizationHelper.GetStringId(texts, "CollectPushComp");
-         CollectPushComp_Tooltip = LocalizationHelper.GetStringId(texts, "CollectPushComp_Tooltip");
+            CollectSettings_Headline = LocalizationHelper.GetStringId(texts, "CollectSettings_Headline");
+            CollectPriority = LocalizationHelper.GetStringId(texts, "CollectPriority");
+            CollectPriority_Tooltip = LocalizationHelper.GetStringId(texts, "CollectPriority_Tooltip");
+            CollectOnlyIfIdle = LocalizationHelper.GetStringId(texts, "CollectOnlyIfIdle");
+            CollectOnlyIfIdle_Tooltip = LocalizationHelper.GetStringId(texts, "CollectOnlyIfIdle_Tooltip");
+            CollectPushOre = LocalizationHelper.GetStringId(texts, "CollectPushOre");
+            CollectPushOre_Tooltip = LocalizationHelper.GetStringId(texts, "CollectPushOre_Tooltip");
+            CollectPushItems = LocalizationHelper.GetStringId(texts, "CollectPushItems");
+            CollectPushItems_Tooltip = LocalizationHelper.GetStringId(texts, "CollectPushItems_Tooltip");
+            CollectPushComp = LocalizationHelper.GetStringId(texts, "CollectPushComp");
+            CollectPushComp_Tooltip = LocalizationHelper.GetStringId(texts, "CollectPushComp_Tooltip");
 
-         Color_PickCurrentColor = LocalizationHelper.GetStringId(texts, "Color_PickCurrentColor");
-         Color_SetCurrentColor = LocalizationHelper.GetStringId(texts, "Color_SetCurrentColor");
+            Color_PickCurrentColor = LocalizationHelper.GetStringId(texts, "Color_PickCurrentColor");
+            Color_SetCurrentColor = LocalizationHelper.GetStringId(texts, "Color_SetCurrentColor");
 
-         Priority_Enable = LocalizationHelper.GetStringId(texts, "Priority_Enable");
-         Priority_Disable = LocalizationHelper.GetStringId(texts, "Priority_Disable");
-         Priority_Up = LocalizationHelper.GetStringId(texts, "Priority_Up");
-         Priority_Down = LocalizationHelper.GetStringId(texts, "Priority_Down");
+            Priority_Enable = LocalizationHelper.GetStringId(texts, "Priority_Enable");
+            Priority_Disable = LocalizationHelper.GetStringId(texts, "Priority_Disable");
+            Priority_Up = LocalizationHelper.GetStringId(texts, "Priority_Up");
+            Priority_Down = LocalizationHelper.GetStringId(texts, "Priority_Down");
 
-         AreaShow = LocalizationHelper.GetStringId(texts, "AreaShow");
-         AreaShow_Tooltip = LocalizationHelper.GetStringId(texts, "AreaShow_Tooltip");
-         AreaWidth = LocalizationHelper.GetStringId(texts, "AreaWidth");
-         AreaHeight = LocalizationHelper.GetStringId(texts, "AreaHeight");
-         AreaDepth = LocalizationHelper.GetStringId(texts, "AreaDepth");
+            AreaShow = LocalizationHelper.GetStringId(texts, "AreaShow");
+            AreaShow_Tooltip = LocalizationHelper.GetStringId(texts, "AreaShow_Tooltip");
+            AreaWidth = LocalizationHelper.GetStringId(texts, "AreaWidth");
+            AreaHeight = LocalizationHelper.GetStringId(texts, "AreaHeight");
+            AreaDepth = LocalizationHelper.GetStringId(texts, "AreaDepth");
 
-         //RemoteCtrlBy = LocalizationHelper.GetStringId(texts, "RemoteCtrlBy");
-         //RemoteCtrlBy_Tooltip = LocalizationHelper.GetStringId(texts, "RemoteCtrlBy_Tooltip");
-         //RemoteCtrlBy_None = LocalizationHelper.GetStringId(texts, "RemoteCtrlBy_None");
+            //RemoteCtrlBy = LocalizationHelper.GetStringId(texts, "RemoteCtrlBy");
+            //RemoteCtrlBy_Tooltip = LocalizationHelper.GetStringId(texts, "RemoteCtrlBy_Tooltip");
+            //RemoteCtrlBy_None = LocalizationHelper.GetStringId(texts, "RemoteCtrlBy_None");
 
-         //RemoteCtrlShowArea = LocalizationHelper.GetStringId(texts, "RemoteCtrlShowArea");
-         //RemoteCtrlShowArea_Tooltip = LocalizationHelper.GetStringId(texts, "RemoteCtrlShowArea_Tooltip");
-         //RemoteCtrlWorking = LocalizationHelper.GetStringId(texts, "RemoteCtrlWorking");
-         //RemoteCtrlWorking_Tooltip = LocalizationHelper.GetStringId(texts, "RemoteCtrlWorking_Tooltip");
+            //RemoteCtrlShowArea = LocalizationHelper.GetStringId(texts, "RemoteCtrlShowArea");
+            //RemoteCtrlShowArea_Tooltip = LocalizationHelper.GetStringId(texts, "RemoteCtrlShowArea_Tooltip");
+            //RemoteCtrlWorking = LocalizationHelper.GetStringId(texts, "RemoteCtrlWorking");
+            //RemoteCtrlWorking_Tooltip = LocalizationHelper.GetStringId(texts, "RemoteCtrlWorking_Tooltip");
 
-         SoundVolume = LocalizationHelper.GetStringId(texts, "SoundVolume");
-         ScriptControlled = LocalizationHelper.GetStringId(texts, "ScriptControlled");
-         ScriptControlled_Tooltip = LocalizationHelper.GetStringId(texts, "ScriptControlled_Tooltip");
+            SoundVolume = LocalizationHelper.GetStringId(texts, "SoundVolume");
+            ScriptControlled = LocalizationHelper.GetStringId(texts, "ScriptControlled");
+            ScriptControlled_Tooltip = LocalizationHelper.GetStringId(texts, "ScriptControlled_Tooltip");
 
-         Info_CurentWeldEntity = LocalizationHelper.GetStringId(texts, "Info_CurentWeldEntity");
-         Info_CurentGrindEntity = LocalizationHelper.GetStringId(texts, "Info_CurentGrindEntity");
-         Info_InventoryFull = LocalizationHelper.GetStringId(texts, "Info_InventoryFull");
-         Info_LimitReached = LocalizationHelper.GetStringId(texts, "Info_LimitReached");
-         //Info_DisabledByRemote = LocalizationHelper.GetStringId(texts, "Info_DisabledByRemote");
-         Info_BlocksToBuild = LocalizationHelper.GetStringId(texts, "Info_BlocksToBuild");
-         Info_BlocksToGrind = LocalizationHelper.GetStringId(texts, "Info_BlocksToGrind");
-         Info_ItemsToCollect = LocalizationHelper.GetStringId(texts, "Info_ItemsToCollect");
-         Info_More = LocalizationHelper.GetStringId(texts, "Info_More");
-         Info_MissingItems = LocalizationHelper.GetStringId(texts, "Info_MissingItems");
-         Info_BlockSwitchedOff = LocalizationHelper.GetStringId(texts, "Info_BlockSwitchedOff");
-         Info_BlockDamaged = LocalizationHelper.GetStringId(texts, "Info_BlockDamaged");
-         Info_BlockUnpowered = LocalizationHelper.GetStringId(texts, "Info_BlockUnpowered");
+            Info_CurentWeldEntity = LocalizationHelper.GetStringId(texts, "Info_CurentWeldEntity");
+            Info_CurentGrindEntity = LocalizationHelper.GetStringId(texts, "Info_CurentGrindEntity");
+            Info_InventoryFull = LocalizationHelper.GetStringId(texts, "Info_InventoryFull");
+            Info_LimitReached = LocalizationHelper.GetStringId(texts, "Info_LimitReached");
+            //Info_DisabledByRemote = LocalizationHelper.GetStringId(texts, "Info_DisabledByRemote");
+            Info_BlocksToBuild = LocalizationHelper.GetStringId(texts, "Info_BlocksToBuild");
+            Info_BlocksToGrind = LocalizationHelper.GetStringId(texts, "Info_BlocksToGrind");
+            Info_ItemsToCollect = LocalizationHelper.GetStringId(texts, "Info_ItemsToCollect");
+            Info_More = LocalizationHelper.GetStringId(texts, "Info_More");
+            Info_MissingItems = LocalizationHelper.GetStringId(texts, "Info_MissingItems");
+            Info_BlockSwitchedOff = LocalizationHelper.GetStringId(texts, "Info_BlockSwitchedOff");
+            Info_BlockDamaged = LocalizationHelper.GetStringId(texts, "Info_BlockDamaged");
+            Info_BlockUnpowered = LocalizationHelper.GetStringId(texts, "Info_BlockUnpowered");
 
-         Cmd_HelpClient = LocalizationHelper.GetStringId(texts, "Cmd_HelpClient");
-         Cmd_HelpServer = LocalizationHelper.GetStringId(texts, "Cmd_HelpServer");
-      }
+            Cmd_HelpClient = LocalizationHelper.GetStringId(texts, "Cmd_HelpClient");
+            Cmd_HelpServer = LocalizationHelper.GetStringId(texts, "Cmd_HelpServer");
+        }
 
-      public static Dictionary<string, string> GetDictionary(MyLanguagesEnum language)
-      {
-         return LocalizationHelper.GetTexts(language, GetDictionaries(), null);
-      }
+        public static Dictionary<string, string> GetDictionary(MyLanguagesEnum language)
+        {
+            return LocalizationHelper.GetTexts(language, GetDictionaries(), null);
+        }
 
-      static Dictionary<MyLanguagesEnum, Dictionary<string, string>> GetDictionaries()
-      {
-         var dicts = new Dictionary<MyLanguagesEnum, Dictionary<string, string>>
+        static Dictionary<MyLanguagesEnum, Dictionary<string, string>> GetDictionaries()
+        {
+            var dicts = new Dictionary<MyLanguagesEnum, Dictionary<string, string>>
          {
             { MyLanguagesEnum.English, new Dictionary<string, string>
                {
@@ -298,7 +298,7 @@ namespace SpaceEquipmentLtd.NanobotBuildAndRepairSystem
 
                   {"Color_PickCurrentColor",          "Pick current build color"},
                   {"Color_SetCurrentColor",           "Set current build color"},
-      
+
                   {"AreaShow",                        "Show Area"},
                   {"AreaShow_Tooltip",                "When checked, it will show you the area this system covers"},
                   {"AreaWidth",                       "Area Width"},
@@ -334,7 +334,7 @@ namespace SpaceEquipmentLtd.NanobotBuildAndRepairSystem
                                                       "\n[{6} {7}]: Export the current translations for the selected language into a file located in {8}"},
                   {"Cmd_HelpServer",                  "\n[{0}]: Creates a settings file inside your current world folder. After restart the settings in this file will be used, instead of the global mod-settings file." +
                                                       "\n[{1}]: Creates a global settings file inside mod folder (including all options)."}
-               }      
+               }
             },
             { MyLanguagesEnum.German,  new Dictionary<string, string>
                {
@@ -607,7 +607,7 @@ namespace SpaceEquipmentLtd.NanobotBuildAndRepairSystem
 
                   {"Color_PickCurrentColor",          "读取当前的建造颜色"},
                   {"Color_SetCurrentColor",           "设定当前的建造颜色"},
-      
+
                   {"AreaShow",                        "显示区域"},
                   {"AreaShow_Tooltip",                "选中后, 系统覆盖的区域将被显示"},
                   {"AreaWidth",                       "区域宽度"},
@@ -647,8 +647,8 @@ namespace SpaceEquipmentLtd.NanobotBuildAndRepairSystem
             }
          };
 
-         //dicts.Add(MyLanguagesEnum.Spanish_HispanicAmerica, dicts[MyLanguagesEnum.Spanish_Spain]);
-         return dicts;
-      }
-   }
+            //dicts.Add(MyLanguagesEnum.Spanish_HispanicAmerica, dicts[MyLanguagesEnum.Spanish_Spain]);
+            return dicts;
+        }
+    }
 }
